@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/logo_preto-14.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultiBody Ginásio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <a href="index.html"><img src="images/branco-com-sombra-14.png" alt="Logo MultiBody Ginásio" class="logo" /></a>
+      
+      <button class="menu-toggle" aria-label="Abrir menu">
+        &#9776; <!-- ícone hambúrguer -->
+      </button>
+      <button class="menu-close" aria-label="Fechar menu">&times;</button>
+
+      <nav class="menu">
+        <a href="index.html" style="color: #C08511;">MULTIBODY</a>
+        <a href="index.html#aulas">AULAS</a>
+        <a href="index.html#planos">PLANOS</a>
+        <a href="fitness.html">FITNESS</a><a href="parceria.html">PARCERIAS</a>
+        <a href="outros_servicos.html" target="_blank">BELEZA & BEM ESTAR</a>
+        <a href="contactos.html">CONTACTOS</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+  
+    <div class="text-section">
+      <h2>AULAS DE TRX - BENEFÍCIOS</h2>
+      
+      
+      <p>
+        <strong>Trabalha o corpo inteiro</strong><br>
+O TRX ativa vários grupos musculares ao mesmo tempo, promovendo força, equilíbrio, estabilidade e coordenação em um único exercício. <br><br>
+
+<strong>Fortalecimento do core</strong><br>
+Por exigir constante estabilização do tronco, o TRX é excelente para fortalecer o abdómen e a lombar. <br><br>
+
+<strong>Ajustável a todos os níveis</strong><br>
+A intensidade dos exercícios pode ser facilmente adaptada, tornando o TRX acessível tanto para iniciantes quanto para avançados. <br><br>
+
+<strong>Melhora a consciência corporal e postura</strong><br>
+Por exigir controle e alinhamento nos movimentos, o TRX ajuda a desenvolver uma postura mais correta e uma melhor percepção do corpo. <br><br>
+
+<h2>MAPA DE AULA</h2>
+<p><strong>4ª Feira - 18H15</strong></p>
+      </p>
+      <div class="video-cont">
+        <iframe 
+          src="https://www.youtube.com/embed/WxDdFqsi2ag" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <a href="index.html" class="back-button">← Voltar</a>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menuClose = document.querySelector(".menu-close");
+      const menu = document.querySelector(".menu");
+  
+      if (menuToggle && menuClose && menu) {
+        menuToggle.addEventListener("click", () => {
+          console.log("Clicou no hambúrguer!");
+          menu.classList.add("active");
+          menuToggle.style.display = "none";
+          menuClose.style.display = "block";
+        });
+  
+        menuClose.addEventListener("click", () => {
+          menu.classList.remove("active");
+          menuToggle.style.display = "block";
+          menuClose.style.display = "none";
+        });
+      } else {
+        console.error("Algum elemento do menu não foi encontrado no HTML.");
+      }
+    });
+  </script> 
+</body>
+</html>

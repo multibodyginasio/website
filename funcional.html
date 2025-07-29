@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/logo_preto-14.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultiBody Ginásio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <a href="index.html"><img src="images/branco-com-sombra-14.png" alt="Logo MultiBody Ginásio" class="logo" /></a>
+
+      <button class="menu-toggle" aria-label="Abrir menu">
+        &#9776; <!-- ícone hambúrguer -->
+      </button>
+      <button class="menu-close" aria-label="Fechar menu">&times;</button>
+
+      
+      <nav class="menu">
+        <a href="index.html" style="color: #C08511;">MULTIBODY</a>
+        <a href="index.html#aulas">AULAS</a>
+        <a href="index.html#planos">PLANOS</a>
+        <a href="fitness.html">FITNESS</a>
+        <a href="parceria.html">PARCERIAS</a>
+        <a href="outros_servicos.html" target="_blank">BELEZA & BEM ESTAR</a>
+        <a href="contactos.html">CONTACTOS</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+  
+    <div class="text-section">
+      <h2>AULAS DE FUNCIONAL - BENEFÍCIOS</h2>
+      
+      <P>
+        <strong>Melhora do condicionamento físico geral</strong><br>
+O treino funcional trabalha o corpo de forma integrada, melhorando força, resistência, agilidade, equilíbrio e coordenação. <br><br>
+
+<strong>Ajuda na perda de gordura corporal</strong><br>
+As aulas geralmente têm alto gasto calórico, o que contribui para o emagrecimento quando aliado a uma alimentação equilibrada.<br><br>
+
+<strong>Prevenção de lesões</strong><br>
+Como os movimentos simulam atividades do dia a dia, o funcional fortalece músculos estabilizadores e articulações, reduzindo o risco de lesões.<br><br>
+
+<strong>Aumento da disposição e bem-estar</strong><br>
+A prática regular libera endorfinas, melhora o humor e aumenta a energia para as tarefas diárias.<br><br>
+
+<h2>MAPA DE AULA</h2>
+<P><strong>5ª Feira - 19H15</strong></P>
+      </P>
+      <div class="video-cont">
+        <iframe 
+          src="https://www.youtube.com/embed/Po3PDQIfBYM" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <a href="index.html" class="back-button">← Voltar</a>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menuClose = document.querySelector(".menu-close");
+      const menu = document.querySelector(".menu");
+  
+      if (menuToggle && menuClose && menu) {
+        menuToggle.addEventListener("click", () => {
+          console.log("Clicou no hambúrguer!");
+          menu.classList.add("active");
+          menuToggle.style.display = "none";
+          menuClose.style.display = "block";
+        });
+  
+        menuClose.addEventListener("click", () => {
+          menu.classList.remove("active");
+          menuToggle.style.display = "block";
+          menuClose.style.display = "none";
+        });
+      } else {
+        console.error("Algum elemento do menu não foi encontrado no HTML.");
+      }
+    });
+  </script>
+  
+</body>
+</html>

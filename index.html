@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/logo_preto-14-14.png" type="image/x-icon" sizes="64x64"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MultiBody Ginásio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <a href="index.html"><img src="images/branco-com-sombra-14.png" alt="Logo MultiBody Ginásio" class="logo" /></a>
+
+      <button class="menu-toggle" aria-label="Abrir menu">
+        &#9776; <!-- ícone hambúrguer -->
+      </button>
+      <button class="menu-close" aria-label="Fechar menu">&times;</button>
+      
+      <nav class="menu">
+        <a href="#" style="color: #C08511;">MULTIBODY</a>
+        <a href="#aulas">AULAS</a>
+        <a href="#planos">PLANOS</a>
+        <a href="fitness.html">FITNESS</a>
+        <a href="parceria.html">PARCERIAS</a>
+        <a href="outros_servicos.html" target="_blank">BELEZA & BEM ESTAR</a>
+        <a href="contactos.html">CONTACTOS</a>
+      </nav>
+      
+    </div>
+  </header>
+
+    <main>
+        <div class="video-container">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="images/video.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo em HTML5.
+        </video>
+        <div class="overlay"></div>
+            <div class="text-overlay">
+                <h1>O movimento transforma.</h1>
+                <h2 style="color: #C08511;">Começa hoje!</h2>
+              <div class="btn-group">
+                <a href="contactos.html" class="btn btn-primary">
+                  <i class="fas fa-rocket"></i>Contacte-nos
+                </a>
+              </div> 
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow" >&#8595;</div> <!-- seta ↓ -->
+        </div>
+    </main>
+    <div class="content"  id="aulas">
+        <h2>Descobre as nossas aulas</h2>
+    </div>
+    <div class="card-container">
+
+        <div class="card">
+        <img src="images/gap.jpg" alt="Card Image" class="card-image" />
+        <div class="card-overlay">        
+            <a href="gap.html"><button class="card-button">GAP</button></a>
+        </div>
+        </div>
+        <div class="card">
+        <img src="images/cycling.jpg" alt="Card Image" class="card-image" />
+        <div class="card-overlay">        
+            <a href="cycling.html"><button class="card-button">CYCLING</button></a>
+        </div>
+        </div>
+        <div class="card">
+        <img src="images/funcional.jpg" alt="Card Image" class="card-image" />
+        <div class="card-overlay">        
+            <a href="funcional.html"><button class="card-button">FUNCIONAL</button></a>
+        </div>
+        </div>
+        <div class="card">
+        <img src="images/trx.jpg" alt="Card Image" class="card-image" />
+        <div class="card-overlay">        
+            <a href="trx.html"><button class="card-button">TRX</button></a>
+        </div>
+        </div>  
+    </div>
+    
+    <section class="planos-section">
+        <div class="centralizador">
+            <!-- Aqui todas as seções que quer centralizar -->
+            <section id="planos">
+                <h2 class="h2_planos">Conheça nossos planos</h2>
+                <div class="planos-container">
+                <div class="plano-card">
+                    <h3>1x por semana</h3>
+                    <p>Musculação</p>
+                    <p><strong>€19,00/mês <br> Sem Fidelização</strong></p>
+                </div>
+                <div class="plano-card">
+                    <h3>2x por semana</h3>
+                    <p>Aulas de grupo e musculação.</p>
+                    <p><strong>€32,00/mês</strong></p>
+                    <p><strong>Estudante: €28,00/mês <br> Sem Fidelização</strong></p>
+                </div>
+                <div class="plano-card">
+                    <h3>3x por semana</h3>
+                    <p>Aulas de grupo e musculação.</p>
+                    <p><strong>€34,00/mês</strong></p>
+                    <p><strong>Estudante: €30,00/mês <br> Sem Fidelização</strong></p>
+                </div>
+                <div class="plano-card">
+                    <h3>Frequência livre</h3>
+                    <p>Aulas de grupo e musculação.</p>
+                    <p><strong>€36,00/mês</strong></p>
+                    <p><strong>Estudante: €32,00/mês <br> Sem Fidelização</strong></p>
+                </div>
+                
+                </div>
+                <h3 style="color: #C08511; padding-top: 30px;">Se vens de férias, também temos um plano específico para ti!</h3>
+            </section>
+            
+    </section>
+    </div>
+    <div class="mensagem-plano">
+        <a href="fitness.html" class="mensagem-link">
+          Temos um plano específico para o seu perfil, de forma gratuita!
+        </a>
+    </div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/branco-com-sombra-14.png" alt="Logo MultiBody Ginásio" />
+      </div>
+      <nav class="footer-menu">
+        <a href="#" style="color: #C08511;">Home</a>
+        <a href="#aulas">Aulas</a>
+        <a href="#planos">Planos</a>
+        <a href="fitness.html">Fitness</a>
+        <a href="parceria.html">Parcerias</a>
+        <a href="outros_servicos.html" target="_blank">Beleza & Bem Estar</a>
+        <a href="contactos.html">Contactos</a>
+      </nav>
+      <div class="footer-social">
+        <div class="footer-social">
+          <a href="https://maps.app.goo.gl/PHEBEvQXWuQjxdKv7" target="_blank" aria-label="Localização" rel="noopener noreferrer" style="color: white;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1114.5 9 2.5 2.5 0 0112 11.5z"/>
+            </svg>
+          </a>
+            
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/www.multibodyfitness.pt" 
+       target="_blank" 
+       aria-label="Facebook" 
+       rel="noopener noreferrer" 
+       style="color: white;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/>
+      </svg>
+    </a>
+    
+            
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/ginasio_multibody" target="_blank" aria-label="Instagram" rel="noopener noreferrer" style="color: white;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm8.25 1.5a1 1 0 110 2 1 1 0 010-2zm-4.25 1a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/>
+                </svg>
+              </a>
+          </div>
+          
+      </div>
+      <p class="footer-copy">© 2025 MultiBody Ginásio. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <!--<script src="js/script.js"></script>!-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menuClose = document.querySelector(".menu-close");
+      const menu = document.querySelector(".menu");
+  
+      if (menuToggle && menuClose && menu) {
+        menuToggle.addEventListener("click", () => {
+          console.log("Clicou no hambúrguer!");
+          menu.classList.add("active");
+          menuToggle.style.display = "none";
+          menuClose.style.display = "block";
+        });
+  
+        menuClose.addEventListener("click", () => {
+          menu.classList.remove("active");
+          menuToggle.style.display = "block";
+          menuClose.style.display = "none";
+        });
+      } else {
+        console.error("Algum elemento do menu não foi encontrado no HTML.");
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
